@@ -17,7 +17,7 @@ class Chrono extends Component {
         if (!this.state.running) {
             this.intervalId = setInterval(() => {
                 this.setState({
-                    numOfSeconds: this.state.numOfSeconds + 10,
+                    numOfSeconds: this.state.numOfSeconds + 1,
                 })
                 this.refresh();
             }, 1000)
